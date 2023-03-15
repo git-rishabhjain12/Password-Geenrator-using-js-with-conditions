@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  width: fit-content;
+  margin: 15rem auto;
+}
+
+
+@media screen and (max-width: 480px) {
+
+  #passwordlength span,
+  #conditions label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  #passwordlength input[type="number"] {
+    width: 100%;
+  }
+
+  #generateBtn button {
+    width: 100%;
+  }
+}

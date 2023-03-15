@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator with Conditions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="content">
+            <div id="heading">
+                <h1>Password Generator</h1>
+            </div>
+            <div id="output">
+                <input type="text" placeholder="Password" id="passwordValue">
+                <i class="fa-regular fa-clipboard" id="copypassword"></i>
+            </div>
+            <div id="password-length">
+                <label for="passwordlength">Password Length</label>
+                <input type="number" id="passwordLength">
+            </div>
+            <div id="conditions">
+                <label for="uppercase">Upper Case</label>
+                <input type="checkbox" id="upperCaseCheck">
+                <label for="lowercase">Lower Case</label>
+                <input type="checkbox" id="lowerCaseCheck">
+                <label for="numbers">Numbers</label>
+                <input type="checkbox" id="numbersCheck">
+                <label for="symbols">Symbols</label>
+                <input type="checkbox" id="symbolsCheck">
+            </div>
+            <div id="generatorBtn">
+                <button>Generate Password</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+
+</html>
